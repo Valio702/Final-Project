@@ -24,7 +24,6 @@ function displayMovies(movies) {
         let movieCard = document.createElement('div');
         movieCard.classList.add('flip', 'flip-vertical');
         movieCard.innerHTML = `
-            <div class = "card">
                 <div class = "front">
                     <img src = "https://image.tmdb.org/t/p/w500${movie.poster_path}" alt = "${movie.title}">
                 </div>
@@ -33,7 +32,7 @@ function displayMovies(movies) {
                     <p>Description: ${movie.overview}</p>
                     <p>Vote Average: ${movie.vote_average}</p>
                 </div>
-            </div>
+
 
         `;
         movieContainer.appendChild(movieCard);   
